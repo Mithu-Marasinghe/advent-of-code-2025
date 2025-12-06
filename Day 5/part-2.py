@@ -44,8 +44,6 @@ def main():
         line = lines[index]
     
     total = calc_total(possible_values)
-    for val in possible_values:
-        print(val)
     print(total)
 
 def calc_total(possible_values: list):
@@ -65,7 +63,6 @@ def add_range(start: int, stop: int, possible_values: list):
         (that doesnt make sense but idc)
         """
     for i in range(len(possible_values)):
-        print(i)
         list_start, list_stop = possible_values[i]
         
         #Check if any values are in between the added range
